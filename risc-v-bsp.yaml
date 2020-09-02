@@ -1,0 +1,84 @@
+board:
+  buy_url_cn: http://www.alientek.com/
+  buy_url_global: http://www.alientek.com/
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: Pandora IoT Board is a joint product of ATK and RT-Thread, and is
+    positioned as an IoT development board. The onboard resources are very rich and
+    the integration is very high. At the same time, the Pandora development board
+    is also an IoT development board designated by ATK and RT-Thread.
+  description_zh: 潘多拉 IoT Board 是正点原子和 RT-Thread 联合出品，定位为 IoT 物联网开发板。板载资源非常丰富，集成度非常高。同时潘多拉开发板也是正点原子和
+    RT-Thread 指定的 IoT 开发板。
+  emulator_machine: ''
+  large_image: documents/images/board_large.png
+  name: risc-v-gdv103
+  price_cn: 238.00 CNY
+  price_global: 35.00 USD
+  sale_contact_cn: http://www.st.com/stonline/contactus/contacts/index.php
+  sale_contact_global: http://www.st.com/stonline/contactus/contacts/index.php
+  small_image: documents/images/board_small.png
+  vendor: ''
+  version: Rev.A
+chip:
+  chip_name: STM32L475VETx
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32L4
+  source_freq: '8000000'
+  sub_series_name: STM32L475
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+default_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .project
+    - .settings
+    - applications
+    - board
+    - build
+    - cconfig.h
+    - Debug
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - packages
+    - README.md
+    - rt-thread
+    - rtconfig.h
+    - rtconfig.py
+    - SConscript
+    - SConstruct
+    source_path_offset: rtt_default_project_0
+    target_path_offset: ''
+  external_files: []
+  project_description: ''
+  project_name: ''
+  project_type: rt-thread|@full|@4.0.2
+docs:
+- category: manual
+  file: documents/manuals/UM3004-RT-Thread-IoT Board.pdf
+  title: Rt-Thread IoT Board
+- category: sheet
+  file: documents/sheet/STM32L475xx Datasheet.pdf
+  title: STM32L475xx Datasheet
+example_projects: []
+features:
+- On-board ST-LINK/V2.1
+- SRAM:128K
+- SDIO WIFI:AP6181
+- 1.3 inch TFT:240*240
+- Auduo:ES8388
+- Sensor:ICM-20608
+- Sensor:AHT10
+- Motor:TC214B
+- Interface:ATK module
+- Examples:36 bare-metal demos and 30 RT-Thread demos
+pkg_type: Board_Support_Packages
+pkg_vendor: ''
+pkg_version: 0.1.0
+yaml_version: 1
