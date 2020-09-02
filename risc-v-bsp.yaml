@@ -42,7 +42,6 @@ default_projects:
     - board
     - build
     - cconfig.h
-    - Debug
     - Kconfig
     - libraries
     - makefile.targets
