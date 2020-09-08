@@ -78,6 +78,6 @@ features:
 - Interface:ATK module
 - Examples:36 bare-metal demos and 30 RT-Thread demos
 pkg_type: Board_Support_Packages
-pkg_vendor: ''
+pkg_vendor: 'RealThread'
 pkg_version: 0.1.0
 yaml_version: 1
