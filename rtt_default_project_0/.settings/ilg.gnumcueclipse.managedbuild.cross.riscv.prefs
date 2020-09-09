@@ -1,3 +1,2 @@
 eclipse.preferences.version=1
-toolchain.path.393615029=${toolchain_install_path}/${riscv_nuclei_gcc_relative_path}
 toolchain.path.512258282=${toolchain_install_path}/${riscv_nuclei_gcc_relative_path}

@@ -40,7 +40,6 @@ default_projects:
     - .settings
     - applications
     - board
-    - build
     - cconfig.h
     - Kconfig
     - libraries
