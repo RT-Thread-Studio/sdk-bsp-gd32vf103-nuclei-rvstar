@@ -115,8 +115,8 @@ LIBPATH = [ cwd + '/NMSIS/Library/DSP/GCC',
 if build_soc == "gd32vf103":
     CPPPATH.append(cwd + '/' + SoC_Common + '/Include/Usb')
 
-CPPDEFINES = [ '-DDOWNLOAD_MODE={}'.format(DOWNLOAD_MODE),
-               '-DRTOS_RTTHREAD', '-DNUCLEI_BANNER=0' ]
+CPPDEFINES = [ 'DOWNLOAD_MODE={}'.format(DOWNLOAD_MODE),
+               'RTOS_RTTHREAD', 'NUCLEI_BANNER=0' ]
 
 extra_flags = build_core_options
 extra_lflags = "{} -T {}".format(build_core_options, build_ldscript)

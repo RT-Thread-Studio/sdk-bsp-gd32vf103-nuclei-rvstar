@@ -13,6 +13,8 @@
 
 int main(int argc, char *argv[])
 {
+    printf("test1");
+        printf("test");
     return RT_EOK;
 }
 

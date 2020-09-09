@@ -41,7 +41,7 @@ if PLATFORM == 'gcc':
     CFLAGS  = ' -ffunction-sections -fdata-sections -fno-common '
     AFLAGS  = CFLAGS
     LFLAGS  = ' --specs=nano.specs --specs=nosys.specs -nostartfiles -Wl,--gc-sections '
-    LFLAGS += ' -Wl,-cref,-Map=rtthread.map'
+    LFLAGS += ' -Wl,-cref,-Map=rtthread.map -T packages/nuclei_sdk-latest/SoC/gd32vf103/Board/gd32vf103v_rvstar/Source/GCC/gcc_gd32vf103_flashxip.ld'
     LFLAGS  += ' -u _isatty -u _write -u _sbrk -u _read -u _close -u _fstat -u _lseek '
     CPATH   = ''
     LPATH   = ''
