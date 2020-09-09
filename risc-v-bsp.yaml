@@ -49,6 +49,7 @@ default_projects:
     - rt-thread
     - rtconfig.h
     - rtconfig.py
+    - rtconfig_preinc.h
     - SConscript
     - SConstruct
     source_path_offset: rtt_default_project_0
