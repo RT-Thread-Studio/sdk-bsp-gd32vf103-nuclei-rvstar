@@ -11,7 +11,7 @@ board:
     RT-Thread 指定的 IoT 开发板。
   emulator_machine: ''
   large_image: documents/images/board_large.png
-  name: risc-v-gdv103
+  name: gd32vf103_rvstar
   price_cn: 238.00 CNY
   price_global: 35.00 USD
   sale_contact_cn: http://www.st.com/stonline/contactus/contacts/index.php
