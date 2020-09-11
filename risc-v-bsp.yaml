@@ -60,7 +60,7 @@ docs:
   title: Reference manual
 - category: sheet
   file: documents/sheet/sheet.pdf
-  title: STM32L475xxGD32VF103 Datasheet
+  title: GD32VF103 Datasheet
 example_projects: []
 features:
 - 微控制器：GD32VF103VBT6（32位RISC-V处理器）
