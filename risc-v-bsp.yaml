@@ -1,34 +1,30 @@
 board:
-  buy_url_cn: http://www.alientek.com/
-  buy_url_global: http://www.alientek.com/
-  debug_interface: SWD
-  debugger: ST-LINK
-  description_en: Pandora IoT Board is a joint product of ATK and RT-Thread, and is
-    positioned as an IoT development board. The onboard resources are very rich and
-    the integration is very high. At the same time, the Pandora development board
-    is also an IoT development board designated by ATK and RT-Thread.
-  description_zh: 潘多拉 IoT Board 是正点原子和 RT-Thread 联合出品，定位为 IoT 物联网开发板。板载资源非常丰富，集成度非常高。同时潘多拉开发板也是正点原子和
-    RT-Thread 指定的 IoT 开发板。
+  buy_url_cn: https://item.taobao.com/item.htm?id=612863444889
+  buy_url_global: https://item.taobao.com/item.htm?id=612863444889
+  debug_interface: "JTAG"
+  debugger: "JTAG"
+  description_en: RV-STAR is a RISC-V evaluation development board based on GD32VF103 MCU. It provides resources such as on-board debugger, Reset and Wakeup user buttons, RGB LED, USB OTG, and EXMC, Arduino and PMOD expansion interfaces.
+  description_zh: RV-STAR 是一款基于 GD32VF103 MCU 的 RISC-V 评估开发板，提供了板载调试器、Reset 和 Wakeup 用户按键、RGB LED、USB OTG，以及 EXMC、Arduino 和 PMOD 扩展接口等资源。
   emulator_machine: ''
   large_image: documents/images/board_large.png
-  name: gd32vf103_rvstar
-  price_cn: 238.00 CNY
-  price_global: 35.00 USD
-  sale_contact_cn: http://www.st.com/stonline/contactus/contacts/index.php
-  sale_contact_global: http://www.st.com/stonline/contactus/contacts/index.php
+  name: GD32VF103-GD-RVSTAR
+  price_cn: 169.00 CNY
+  price_global: 25.00 USD
+  sale_contact_cn: https://www.rvmcu.com/
+  sale_contact_global: https://www.rvmcu.com/
   small_image: documents/images/board_small.png
-  vendor: 'GD'
+  vendor: 'GigaDevice'
   version: Rev.A
 chip:
-  chip_name: STM32L475VETx
+  chip_name: GD32VF103VBT6
   clock_source: HSE
-  device_vendor: STMicroelectronics
-  family_name: STM32
+  device_vendor: GigaDevice
+  family_name: GD32
   rx_name: PA10
   series_name: STM32L4
   source_freq: '8000000'
-  sub_series_name: STM32L475
-  target_freq: '240000000'
+  sub_series_name: GD32VF103
+  target_freq: '108000000'
   tx_name: PA9
   uart_name: UART1
 default_projects:
@@ -60,23 +56,29 @@ default_projects:
   project_type: rt-thread|@full|@4.0.2
 docs:
 - category: manual
-  file: documents/manuals/UM3004-RT-Thread-IoT Board.pdf
-  title: Rt-Thread IoT Board
+  file: documents/manuals/manual.pdf
+  title: Reference manual
 - category: sheet
-  file: documents/sheet/STM32L475xx Datasheet.pdf
-  title: STM32L475xx Datasheet
+  file: documents/sheet/sheet.pdf
+  title: STM32L475xxGD32VF103 Datasheet
 example_projects: []
 features:
-- On-board ST-LINK/V2.1
-- SRAM:128K
-- SDIO WIFI:AP6181
-- 1.3 inch TFT:240*240
-- Auduo:ES8388
-- Sensor:ICM-20608
-- Sensor:AHT10
-- Motor:TC214B
-- Interface:ATK module
-- Examples:36 bare-metal demos and 30 RT-Thread demos
+- 微控制器：GD32VF103VBT6（32位RISC-V处理器）
+- 内核：芯来科技Bumblebee内核（RV32IMAC）
+- 主频：108MHz
+- 内存：内置128KB Flash、32KB SRAM
+- 工作电压：2.6~3.6V
+- 外设资源：Timer（高级16位定时器*1，通用16位定时器*4）、U(S)ART*5、I2C*2、SPI*3、CAN*2、USBFS*1、ADC*2（16路外部通道）、DAC*2、EXMC*1
+- 供电方式：5V USB 或者 5~9V 外部直流电源（Arduino Vin）
+- 尺寸：66mm*53.4mm
+- USB Type-C接口：下载、调试、串口通信功能
+- Micro USB接口：USB-OTG功能
+- microSD卡插槽（默认没焊接）：外扩SD卡存储（SPI接口）
+- JTAG接口：可分离MCU与调试器，使其各自可单独工作
+- PMOD接口*2：SPI、I2C
+- 双排标准2.54mm排母接口：Arduino兼容接口（外侧），EXMC扩展接口（内侧）
+- 用户按键*2：复位、唤醒
+- RGB LED*1
 pkg_type: Board_Support_Packages
 pkg_vendor: 'RealThread'
 pkg_version: 0.1.0
