@@ -7,13 +7,13 @@ board:
   description_zh: RV-STAR 是一款基于 GD32VF103 MCU 的 RISC-V 评估开发板，提供了板载调试器、Reset 和 Wakeup 用户按键、RGB LED、USB OTG，以及 EXMC、Arduino 和 PMOD 扩展接口等资源。
   emulator_machine: ''
   large_image: documents/images/board_large.png
-  name: GD32VF103-GD-RVSTAR
+  name: GD32VF103-NUCLEI-RVSTAR
   price_cn: 169.00 CNY
   price_global: 25.00 USD
   sale_contact_cn: https://www.rvmcu.com/
   sale_contact_global: https://www.rvmcu.com/
   small_image: documents/images/board_small.png
-  vendor: 'GigaDevice'
+  vendor: 'Nuclei'
   version: Rev.A
 chip:
   chip_name: GD32VF103VBT6
