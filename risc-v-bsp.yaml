@@ -63,6 +63,23 @@ docs:
   title: GD32VF103 Datasheet
 example_projects: []
 features:
+- "Microcontroller: GD32VF103VBT6 (32-bit RISC-V processor)"
+- "Kernel: Nuclei Technology Bumblebee kernel (RV32IMAC)"
+- "Main frequency: 108MHz"
+- "Memory: Built-in 128KB Flash, 32KB SRAM"
+- "Working voltage: 2.6~3.6V"
+- "Peripheral resources: Timer (advanced 16-bit timer*1, general-purpose 16-bit timer*4), U(S)ART*5, I2C*2, SPI*3, CAN*2, USBFS*1, ADC* 2 (16 external channels), DAC*2, EXMC*1"
+- "Power supply: 5V USB or 5~9V external DC power supply (Arduino Vin)"
+- "Size: 66mm*53.4mm"
+- "USB Type-C interface: download, debug, serial communication function"
+- "Micro USB interface: USB-OTG function"
+- "microSD card slot (not soldered by default): externally expanded SD card storage (SPI interface)"
+- "JTAG interface: MCU and debugger can be separated, so that each can work independently"
+- "PMOD interface*2: SPI, I2C"
+- "Double row standard 2.54mm female header interface: Arduino compatible interface (outside), EXMC expansion interface (inside)"
+- "User button*2: reset, wake-up"
+- "RGB LED*1"
+features_zh:
 - 微控制器：GD32VF103VBT6（32位RISC-V处理器）
 - 内核：芯来科技Bumblebee内核（RV32IMAC）
 - 主频：108MHz
@@ -82,4 +99,4 @@ features:
 pkg_type: Board_Support_Packages
 pkg_vendor: 'RealThread'
 pkg_version: 0.1.0
-yaml_version: 1
+yaml_version: 2
