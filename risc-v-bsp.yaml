@@ -98,5 +98,5 @@ features_zh:
 - RGB LED*1
 pkg_type: Board_Support_Packages
 pkg_vendor: 'RealThread'
-pkg_version: 0.1.0
+pkg_version: 0.1.1
 yaml_version: 2
